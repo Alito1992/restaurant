@@ -4,8 +4,8 @@ class DB{
 
     function __construct(){
         try{
-            $this->conexion = new PDO('mysql:host=localhost;dbname=reservoir', 'root', '');
-        }dd
+            $this->conexion = new PDO('mysql:host=localhost;dbname=reservoir', 'root', '123456');
+        }
         catch(PDOException $e){
             $this->conexion = null;
         }
